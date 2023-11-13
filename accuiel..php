@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
     <title>Veuillez entrer le nombre d'adresse svp </title>
     <style>
         title{
@@ -56,8 +57,8 @@
       <h2>Veuillez entrez le  nombre d'adresses</h2>
         <form method="post" action="analyse.php">
             <div >
-                <label for="nombre adresses">Combien d'adresses avez-vous ?</label></br>
-                <input type="number" id="nombre adresses" name="nombre adresses" min="1" required>
+                <label for="nombre_addresses">Combien d'adresses avez-vous ?</label></br>
+                <input type="number" id="nombre_addresses" name="nombre_addresses" min="1" required>
             </div>
             <div class="group">
            
