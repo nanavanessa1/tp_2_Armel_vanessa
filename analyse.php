@@ -16,6 +16,10 @@
             height: 92vh;
             margin: 5;
         }
+        .highlight{
+            background-color: white; 
+        }
+        
         .class{
 
         }
@@ -28,7 +32,7 @@
 </head>
 <body>
     <div class="container">
-        <h1><b>Entrez les adresses</b></h1>
+        <h1 class="highlight">Entrez les adresses</b></h1>
         <form method="post" action="confirmAnalyse.php">
             <?php
             
@@ -50,7 +54,7 @@
                     echo "<input type='text' id='type$id' name='type$id' maxlength='20' required><br>";
 
                     echo "<label for='city$id'>City:</label>";
-                    
+
                     echo "<select id='city$id' name='city$id'>
                 <option value='Montreal'>Montreal</option>
                 <option value='Laval'>Laval</option>
