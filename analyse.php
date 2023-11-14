@@ -16,6 +16,10 @@
             height: 92vh;
             margin: 5;
         }
+        .red-button {
+        background-color: red;
+        color: white;
+        }
         .highlight{
             background-color: white; 
         }
