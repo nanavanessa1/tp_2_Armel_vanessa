@@ -37,12 +37,11 @@
 <body>
     <div class="container">
         <h1 class="highlight">Entrez les adresses</b></h1>
-        <!-- <form method="post" action="confirmAnalyse.php"> -->
+        
             <?php
             require('connexion.php');
 
-            //$_SERVER['REQUEST_METHOD'] est une variable su en PHP
-            // qui contient la méthode de requête utilisée pour accéder à la page actuelle. 
+            
             if ($_SERVER["REQUEST_METHOD"] === "POST") 
             
         { 
@@ -62,7 +61,7 @@
                     echo "<input type='number' id='street_nb$i' name='street_nb$i' required><br>";
 
                     echo "<label for='type$i'>Type:</label>";
-                    //echo "<input type='text' id='type$i' name='type$i' maxlength='20' required>";
+                    
                     echo "<select id='type$i' name='type$i'>
                     <option value='Facturation'>Facturation</option>
                     <option value='Livraison'>Livraison</option>
@@ -92,7 +91,7 @@
             else {
                 echo "<p>une erreur est survenue sur le nombre_d'adresse!!!!!</p>";
             }
-            // closeBd($conn);
+            
             ?>
         </form>
     </div>

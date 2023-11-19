@@ -1,14 +1,6 @@
 <?php
 
-// function createAddress($conn, $street, $street_nb, $type, $city, $zipcode) {
-//     echo"<alert>";
-//     $stmt = mysqli_prepare($conn, "INSERT INTO address (street, street_nb, type, city, zipcode) VALUES (?, ?, ?, ?, ?)");
-//     mysqli_stmt_bind_param($stmt, "sisss", $street, $street_nb, $type, $city, $zipcode);
-    
-//     mysqli_stmt_execute($stmt);
 
-//     mysqli_stmt_close($stmt);
-// }
 function createAddress($mysql, $data)
 {
     global $conn;

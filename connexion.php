@@ -1,7 +1,5 @@
  <?php
- //require_once ("accueil.php");
- //require_once ("analyse.php");
- //require_once ("confirmAnalyse.php");
+ 
  function connexionBd() {
     $server = 'localhost';
     $userName = 'root';
