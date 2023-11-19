@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Veuillez entrer le nombre d'adresse svp </title>
+    <title>Veuillez entrer le nombre d'adresses svp </title>
     <style>
         title{
             color:black;
@@ -9,7 +9,7 @@
         body{
             background-image: url("luxury.jpg");
             background-size: cover; /* Ajuste la taille de l'image pour remplir le conteneur */
-            background-position: center; /* Positionne l'image au centre */
+            background-position: center; /* Position l'image au centre */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -31,10 +31,10 @@
         .group{
             display:center;
         }
-        .red-button {
+         /* .red-button {
         background-color: red;
-        color: white;
-        }
+        color: white; 
+        }  */
         label{
             color: white;
             display: center;

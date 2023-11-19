@@ -1,3 +1,29 @@
+<?php 
+
+ require('functions.php');
+
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+$mysql = mysqli_connect("localhost", "root", "", "ecom1_tp2");
+$data = [
+    'street' => isset($_POST['street']) ? $_POST['street'] : null,
+    'street_num' => isset($_POST['street_num']) ? $_POST['street_num'] : null,
+    'city' => isset($_POST['city']) ? $_POST['city'] : null,
+    'type' => isset($_POST['type']) ? $_POST['type'] : null,
+    'zipcode' => isset($_POST['zipcode']) ? $_POST['zipcode'] : null,
+];
+createAddress($mysql, $data);
+    foreach ($_POST as $key => $value) {
+       echo "<b>$key:</b> $value <br>";
+    
+       
+    }};
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,18 +46,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>ENREGISTREMENT</H1>
 </body>
 </html>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Vérification des données postées et affichage pour vérification
-    echo"<h1>ENREGISTREMENT</h1>";
-    foreach ($_POST as $key => $value) {
-        echo "<strong>$key:</strong> $value <br>";
-    }
 
-    // Connexion à la base de données et enregistrement des données ici
-}
 ?>
